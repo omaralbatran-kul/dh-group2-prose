@@ -23,3 +23,9 @@
 ## 9 Nov - step 1 whitespace
 
 - Trim + collapse spaces on all columns. Only 13 cells changed: Personal author 8, Other personal authors 4, Country code 1 ("fr " → "fr").
+
+## 9 Nov - step 2 title "[electronic resource]"
+
+- Removed "[electronic resource]" from Title with `value.replace(/\s*\[electronic resource\]/, "")`. 10529 cells changed.
+- Checked with a text filter on "electronic": 1 left, a typo "[electronic resouirce]" (Antoinette : a tale of the ancien régime).
+  Fixed that one by hand.
