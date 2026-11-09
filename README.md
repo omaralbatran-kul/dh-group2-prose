@@ -16,6 +16,13 @@ metadata dataset, done in OpenRefine. It is part of the Group 2 project (Omar & 
 | `data/clean/` | Final cleaned Prose dataset, ready to merge |
 | `openrefine/` | Exported OpenRefine operation histories (Undo/Redo → Extract → JSON) |
 
+## Workflow (after every cleaning step)
+1. Clear all facets/filters (OpenRefine only exports the rows you see)
+2. Export → CSV → `data/interim/NN_step.csv`
+3. Undo/Redo → Extract → only the new operations → `openrefine/NN_step.json`
+4. Add a line to `NOTES.md`: what changed and how many cells
+5. Commit
+
 ## Reproducing
 1. Create an OpenRefine project from `data/raw/MicrosoftBooks-Prose.xlsx`
 2. Undo/Redo → Apply → paste the JSON files from `openrefine/` in order.
