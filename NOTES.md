@@ -29,3 +29,22 @@
 - Removed "[electronic resource]" from Title with `value.replace(/\s*\[electronic resource\]/, "")`. 10529 cells changed.
 - Checked with a text filter on "electronic": 1 left, a typo "[electronic resouirce]" (Antoinette : a tale of the ancien régime).
   Fixed that one by hand.
+
+## 9 Nov - checking Imprint
+
+- 12 empty. All the others have a place and a year, but only 70% have a publisher (30% are just `London, 1869.`).
+- Year is messy: [1873.] (1664 rows), ranges like 1884-93 (205), two years like 1860 [1859] (399).
+- London is 71%. Same place written differently (`Edinburgh & London` / `Edinburgh and London`).
+- Some odd ones that will break a simple split: `Whiting & Co.: London, 1888.`, "printed by ... sold by ...".
+
+## 10 Nov - step 3 title brackets
+
+- Some titles are fully wrapped in [ ] (= title made up by the cataloguer). Removed the outer brackets with
+  `value.replace(/^\[(.*)\]$/, "$1")` in a new column, renamed old Title to `OG_Title` so the original stays. 893 changed.
+- Greedy regex broke 5 titles that start and end with different brackets, e.g. `[A novel.] By ... [J. B. Harwood].`
+  Fixed those back by hand, plus some typos in the original (Hogan `.)]`, Hungerford `]`, Ned Locksley `”]`, Mary Hollis, Elegy).
+- Hand edits are not in the JSON (OpenRefine doesn't extract single cell edits).
+
+## 10 Nov - step 4 drop DDC
+
+- Removed DDC (only 9 of 10532 filled). Agreed with Bert.
