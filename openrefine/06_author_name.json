@@ -1,0 +1,41 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Personal author",
+    "expression": "grel:with(value.split(\",\")[-1].trim(), p, if(isNotNull(p.match(/.*\\d{3}.*/)), p.replace(\".\",\"\").trim(), null))",
+    "onError": "set-to-blank",
+    "newColumnName": "Personal author date",
+    "columnInsertIndex": 5,
+    "description": "Create column Personal author date at index 5 based on column Personal author using expression grel:with(value.split(\",\")[-1].trim(), p, if(isNotNull(p.match(/.*\\d{3}.*/)), p.replace(\".\",\"\").trim(), null))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Personal author",
+    "expression": "grel:value.replace(/,\\s*[^,]*\\d{3}[^,]*$/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Personal author using expression grel:value.replace(/,\\s*[^,]*\\d{3}[^,]*$/, \"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Personal author",
+    "expression": "grel:with(if(value.indexOf(\",\") > 0, value.substring(0, value.indexOf(\",\")), value), s, if(s == s.toUppercase(), s.toTitlecase() + value.substring(s.length()), value))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Personal author using expression grel:with(if(value.indexOf(\",\") > 0, value.substring(0, value.indexOf(\",\")), value), s, if(s == s.toUppercase(), s.toTitlecase() + value.substring(s.length()), value))"
+  }
+]
