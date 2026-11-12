@@ -64,3 +64,7 @@
 
 - toTitlecase messed up some surnames, fixed 73 cells: `O'byrne` -> `O'Byrne`, `Hahn-hahn` -> `Hahn-Hahn`,
   `Auget De Saint-sylvain` -> `Auget de Saint-Sylvain`.
+
+## 12 Nov - step 8 Language (041)
+
+- Took out the MARC codes: `$aeng$afre$adut` -> `eng, fre, dut`. 19 cells.
