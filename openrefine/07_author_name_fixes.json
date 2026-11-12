@@ -1,0 +1,430 @@
+[
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Personal author",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Auget De Saint-sylvain, Louis Xavier, Baron de Los Valles."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Auget de Saint-Sylvain, Louis Xavier, Baron de Los Valles."
+      },
+      {
+        "from": [
+          "Barbé-marbois, François de, Marquis."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Barbé-Marbois, François de, Marquis."
+      },
+      {
+        "from": [
+          "Bertrand De Moleville, Antoine François."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bertrand de Moleville, Antoine François."
+      },
+      {
+        "from": [
+          "Casagrandi-orsini, Vincenzo."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Casagrandi-Orsini, Vincenzo."
+      },
+      {
+        "from": [
+          "De La Pasture, Elizabeth Lydia Rosabelle, afterwards CLIFFORD (Elizabeth Lydia Rosabelle) Lady."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "De la Pasture, Elizabeth Lydia Rosabelle, afterwards CLIFFORD (Elizabeth Lydia Rosabelle) Lady."
+      },
+      {
+        "from": [
+          "Fernandez De Enciso, Martin."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fernandez de Enciso, Martin."
+      },
+      {
+        "from": [
+          "Fitz-gerald, Shafto Justin Adair, and LLOYD (S. O.)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fitz-Gerald, Shafto Justin Adair, and LLOYD (S. O.)"
+      },
+      {
+        "from": [
+          "Galletti Di Cadilhac, Margaret Isabella, Hon."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Galletti di Cadilhac, Margaret Isabella, Hon."
+      },
+      {
+        "from": [
+          "Galo De Cuendias, Manuel, and FÉRÉAL (Victor de) pseud. [i.e. Madame Suberwick.]"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Galo de Cuendias, Manuel, and FÉRÉAL (Victor de) pseud. [i.e. Madame Suberwick.]"
+      },
+      {
+        "from": [
+          "Gauzence De Lastours, Paul Augustin."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gauzence de Lastours, Paul Augustin."
+      },
+      {
+        "from": [
+          "Hahn-hahn, Ida Maria Luise Sophie Frederica Gustave, Countess."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hahn-Hahn, Ida Maria Luise Sophie Frederica Gustave, Countess."
+      },
+      {
+        "from": [
+          "Home-gall, W. B."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Home-Gall, W. B."
+      },
+      {
+        "from": [
+          "Lach-szyrma, Wladyslaw Somerville."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lach-Szyrma, Wladyslaw Somerville."
+      },
+      {
+        "from": [
+          "Le Poittevin De La Croix, Edmond."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Le Poittevin de la Croix, Edmond."
+      },
+      {
+        "from": [
+          "Leblanc De Ferrière, Alexandre."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Leblanc de Ferrière, Alexandre."
+      },
+      {
+        "from": [
+          "Mikhailovsky-danilevsky, Aleksandr Ivanovich, General."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mikhailovsky-Danilevsky, Aleksandr Ivanovich, General."
+      },
+      {
+        "from": [
+          "O'brennan, Martin A."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "O'Brennan, Martin A."
+      },
+      {
+        "from": [
+          "O'byrne, Daniel."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "O'Byrne, Daniel."
+      },
+      {
+        "from": [
+          "O'byrne, M. L."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "O'Byrne, M. L."
+      },
+      {
+        "from": [
+          "O'byrne, Robert Henry."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "O'Byrne, Robert Henry."
+      },
+      {
+        "from": [
+          "O'byrne, Robert W."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "O'Byrne, Robert W."
+      },
+      {
+        "from": [
+          "O'callaghan, Edmund Bailey."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "O'Callaghan, Edmund Bailey."
+      },
+      {
+        "from": [
+          "O'callaghan, John Cornelius."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "O'Callaghan, John Cornelius."
+      },
+      {
+        "from": [
+          "O'connor, Roger."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "O'Connor, Roger."
+      },
+      {
+        "from": [
+          "O'conor, Charles, of Belanagar."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "O'Conor, Charles, of Belanagar."
+      },
+      {
+        "from": [
+          "O'conor, Matthew."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "O'Conor, Matthew."
+      },
+      {
+        "from": [
+          "O'conor, William Anderson."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "O'Conor, William Anderson."
+      },
+      {
+        "from": [
+          "O'dell, Stackpool Edward."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "O'Dell, Stackpool Edward."
+      },
+      {
+        "from": [
+          "O'donoghue, Francis Talbot."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "O'Donoghue, Francis Talbot."
+      },
+      {
+        "from": [
+          "O'donoghue, Nannie Power, Mrs."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "O'Donoghue, Nannie Power, Mrs."
+      },
+      {
+        "from": [
+          "O'donovan, Edmond."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "O'Donovan, Edmond."
+      },
+      {
+        "from": [
+          "O'farrell, Burke."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "O'Farrell, Burke."
+      },
+      {
+        "from": [
+          "O'gowrie, John."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "O'Gowrie, John."
+      },
+      {
+        "from": [
+          "O'grady, Standish James."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "O'Grady, Standish James."
+      },
+      {
+        "from": [
+          "O'hanlon, Alice."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "O'Hanlon, Alice."
+      },
+      {
+        "from": [
+          "O'laverty, James."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "O'Laverty, James."
+      },
+      {
+        "from": [
+          "O'malley, M. F."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "O'Malley, M. F."
+      },
+      {
+        "from": [
+          "O'meara, Kathleen."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "O'Meara, Kathleen."
+      },
+      {
+        "from": [
+          "O'neill, Moira, pseud. [i.e. Nesta Higginson, afterwards Skrine.]"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "O'Neill, Moira, pseud. [i.e. Nesta Higginson, afterwards Skrine.]"
+      },
+      {
+        "from": [
+          "O'reilly, Bernard, Arctic Explorer."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "O'Reilly, Bernard, Arctic Explorer."
+      },
+      {
+        "from": [
+          "O'reilly, Eleanor Grace."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "O'Reilly, Eleanor Grace."
+      },
+      {
+        "from": [
+          "O'reilly, Harrington."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "O'Reilly, Harrington."
+      },
+      {
+        "from": [
+          "O'reilly, John Boyle."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "O'Reilly, John Boyle."
+      },
+      {
+        "from": [
+          "O'shea, John Augustus."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "O'Shea, John Augustus."
+      },
+      {
+        "from": [
+          "O'sullivan, Richard, A.B."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "O'Sullivan, Richard, A.B."
+      },
+      {
+        "from": [
+          "Revel Du Perron, Gabriel Joachim de, Count."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Revel du Perron, Gabriel Joachim de, Count."
+      },
+      {
+        "from": [
+          "Roggero-bargis, Franceschina."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Roggero-Bargis, Franceschina."
+      },
+      {
+        "from": [
+          "Ross-of-bladensburg, John Foster George, Sir, K.C.B."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ross-of-Bladensburg, John Foster George, Sir, K.C.B."
+      },
+      {
+        "from": [
+          "Saint-leger, Joan."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Saint-Leger, Joan."
+      },
+      {
+        "from": [
+          "Schoenaich-carolath, Emil zu, Prince."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Schoenaich-Carolath, Emil zu, Prince."
+      },
+      {
+        "from": [
+          "Simonde De Sismondi, Jean Charles Léonard."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Simonde de Sismondi, Jean Charles Léonard."
+      },
+      {
+        "from": [
+          "Trevor-battye, Aubyn Bernard Rochford."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Trevor-Battye, Aubyn Bernard Rochford."
+      }
+    ],
+    "description": "Mass edit cells in column Personal author (fix casing broken by toTitlecase: O', hyphens, name particles)"
+  }
+]

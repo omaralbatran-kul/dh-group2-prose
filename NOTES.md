@@ -48,3 +48,19 @@
 ## 10 Nov - step 4 drop DDC
 
 - Removed DDC (only 9 of 10532 filled). Agreed with Bert.
+
+## 12 Nov - step 5 title fix + drop OG_Title
+
+- `[Manual of Geology ... Revised edition.].` was still bracketed: it ends with `].` so the step 3 regex (needs `]` at the very end) skipped it. Removed the brackets (3 rows have this title).
+- Dropped `OG_Title`.
+
+## 12 Nov - step 6 author name
+
+- New column `Personal author date` = last comma part if it has a 3+ digit number, dots removed (`1850-1912`, `d 1880`, `fl 1850`). `\d{3}` so `1st Bart.` doesn't count. 1891 rows got a date.
+- Removed that date part from Personal author: `value.replace(/,\s*[^,]*\d{3}[^,]*$/, "")`.
+- Surname to Titlecase, but only if it was ALL CAPS.
+
+## 12 Nov - step 7 author casing fixes
+
+- toTitlecase messed up some surnames, fixed 73 cells: `O'byrne` -> `O'Byrne`, `Hahn-hahn` -> `Hahn-Hahn`,
+  `Auget De Saint-sylvain` -> `Auget de Saint-Sylvain`.
