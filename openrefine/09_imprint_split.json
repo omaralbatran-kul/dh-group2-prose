@@ -1,0 +1,2645 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Imprint",
+    "expression": "grel:value.find(/1[4-9]\\d\\d/)[0]",
+    "onError": "set-to-blank",
+    "newColumnName": "Year of publication",
+    "columnInsertIndex": 10,
+    "description": "Create column Year of publication at index 10 based on column Imprint using expression grel:value.find(/1[4-9]\\d\\d/)[0]"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Imprint",
+    "expression": "grel:value.split(\":\")[0]",
+    "onError": "set-to-blank",
+    "newColumnName": "Place of publishing",
+    "columnInsertIndex": 10,
+    "description": "Create column Place of publishing at index 10 based on column Imprint using expression grel:value.split(\":\")[0]"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "grel:value.replace(/[,;]?[^,;]*1[4-9]\\d\\d.*$/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Place of publishing using expression grel:value.replace(/[,;]?[^,;]*1[4-9]\\d\\d.*$/, \"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "grel:value.replace(/[\\[\\]]/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Place of publishing using expression grel:value.replace(/[\\[\\]]/, \"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Place of publishing using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "grel:value.replace(/\\s*[,;].*printed,?$/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Place of publishing using expression grel:value.replace(/\\s*[,;].*printed,?$/, \"\")"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Imprint",
+    "expression": "grel:value.partition(\":\")[2]",
+    "onError": "set-to-blank",
+    "newColumnName": "Publisher/printer",
+    "columnInsertIndex": 10,
+    "description": "Create column Publisher/printer at index 10 based on column Imprint using expression grel:value.partition(\":\")[2]"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "grel:value.replace(/[,;]?[^,;]*1[4-9]\\d\\d.*$/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Publisher/printer using expression grel:value.replace(/[,;]?[^,;]*1[4-9]\\d\\d.*$/, \"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "grel:value.replace(/[\\[\\]]/, \"\").trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Publisher/printer using expression grel:value.replace(/[\\[\\]]/, \"\").trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Publisher/printer",
+          "expression": "grel:isNotNull(value.match(/(London|Edinburgh|Glasgow|Dublin|New York|Bristol|Manchester)([,;].*| and London)?/))",
+          "columnName": "Publisher/printer",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "grel:cells[\"Publisher/printer\"].value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Place of publishing using expression grel:cells[\"Publisher/printer\"].value"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Publisher/printer",
+          "expression": "grel:isNotNull(value.match(/(London|Edinburgh|Glasgow|Dublin|New York|Bristol|Manchester)([,;].*| and London)?/))",
+          "columnName": "Publisher/printer",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": true,
+                "l": "true"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "grel:cells[\"Imprint\"].value.partition(\":\")[0]",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Publisher/printer using expression grel:cells[\"Imprint\"].value.partition(\":\")[0]"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "grel:value.replace(/^(\\d+ (vols?|no|ser)\\. )*(pp\\. )?([\\dvixl]+\\. )*/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Publisher/printer using expression grel:value.replace(/^(\\d+ (vols?|no|ser)\\. )*(pp\\. )?([\\dvixl]+\\. )*/, \"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "grel:value.replace(/\\s*[,;].*printed,?$/, \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Place of publishing using expression grel:value.replace(/\\s*[,;].*printed,?$/, \"\")"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Place of publishing",
+          "columnName": "Place of publishing",
+          "query": "printed",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Cambridge printed, and London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      }
+    ],
+    "description": "Mass edit cells in column Place of publishing"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Place of publishing",
+          "columnName": "Place of publishing",
+          "query": "printed",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Chicago Philadelphia printed"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Chicago"
+      }
+    ],
+    "description": "Mass edit cells in column Place of publishing"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Place of publishing",
+          "columnName": "Place of publishing",
+          "query": "printed",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Dublin printed"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dublin"
+      }
+    ],
+    "description": "Mass edit cells in column Place of publishing"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Place of publishing",
+          "columnName": "Place of publishing",
+          "query": "printed",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Edinburgh printed and London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      }
+    ],
+    "description": "Mass edit cells in column Place of publishing"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Place of publishing",
+          "columnName": "Place of publishing",
+          "query": "printed",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Edinburgh printed, London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      }
+    ],
+    "description": "Mass edit cells in column Place of publishing"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Place of publishing",
+          "columnName": "Place of publishing",
+          "query": "printed",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Huddersfield printed, London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      }
+    ],
+    "description": "Mass edit cells in column Place of publishing"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Place of publishing",
+          "columnName": "Place of publishing",
+          "query": "printed",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Hutchinson & Co. London Nimeguen printed"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      }
+    ],
+    "description": "Mass edit cells in column Place of publishing"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Place of publishing",
+          "columnName": "Place of publishing",
+          "query": "printed",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "London & New York printed"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London & New York"
+      }
+    ],
+    "description": "Mass edit cells in column Place of publishing"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Place of publishing",
+          "columnName": "Place of publishing",
+          "query": "printed",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "London Bungay printed"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      }
+    ],
+    "description": "Mass edit cells in column Place of publishing"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Place of publishing",
+          "columnName": "Place of publishing",
+          "query": "printed",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "London Edinburgh printed"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      }
+    ],
+    "description": "Mass edit cells in column Place of publishing"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Place of publishing",
+          "columnName": "Place of publishing",
+          "query": "printed",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "London Guildford printed"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      }
+    ],
+    "description": "Mass edit cells in column Place of publishing"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Place of publishing",
+          "columnName": "Place of publishing",
+          "query": "printed",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "London Nimeguen printed"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      }
+    ],
+    "description": "Mass edit cells in column Place of publishing"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Place of publishing",
+          "columnName": "Place of publishing",
+          "query": "printed",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "London printed and Cambridge"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      }
+    ],
+    "description": "Mass edit cells in column Place of publishing"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Place of publishing",
+          "columnName": "Place of publishing",
+          "query": "printed",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "London printed and New York"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London & New York"
+      }
+    ],
+    "description": "Mass edit cells in column Place of publishing"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Place of publishing",
+          "columnName": "Place of publishing",
+          "query": "printed",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "London printed, Cambridge"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      }
+    ],
+    "description": "Mass edit cells in column Place of publishing"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Place of publishing",
+          "columnName": "Place of publishing",
+          "query": "printed",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "London Sydenham printed"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      }
+    ],
+    "description": "Mass edit cells in column Place of publishing"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Place of publishing",
+          "columnName": "Place of publishing",
+          "query": "printed",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "London; Edinburgh, printed Tinsley Brothers"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      }
+    ],
+    "description": "Mass edit cells in column Place of publishing"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Place of publishing",
+          "columnName": "Place of publishing",
+          "query": "printed",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "London; printed from American plates"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      }
+    ],
+    "description": "Mass edit cells in column Place of publishing"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Place of publishing",
+          "columnName": "Place of publishing",
+          "query": "printed",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "London; printed in America"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      }
+    ],
+    "description": "Mass edit cells in column Place of publishing"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Place of publishing",
+          "columnName": "Place of publishing",
+          "query": "printed",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "New York printed ; London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      }
+    ],
+    "description": "Mass edit cells in column Place of publishing"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Place of publishing",
+          "columnName": "Place of publishing",
+          "query": "printed",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "New York printed ;aLondon"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      }
+    ],
+    "description": "Mass edit cells in column Place of publishing"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Place of publishing",
+          "columnName": "Place of publishing",
+          "query": "printed",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Newark-upon-Trent printed, London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      }
+    ],
+    "description": "Mass edit cells in column Place of publishing"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Place of publishing",
+          "columnName": "Place of publishing",
+          "query": "printed",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Oxford and London printed"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      }
+    ],
+    "description": "Mass edit cells in column Place of publishing"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Place of publishing",
+          "columnName": "Place of publishing",
+          "query": "printed",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Oxford printed and London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      }
+    ],
+    "description": "Mass edit cells in column Place of publishing"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Place of publishing",
+          "columnName": "Place of publishing",
+          "query": "printed",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Oxford printed, London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      }
+    ],
+    "description": "Mass edit cells in column Place of publishing"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Place of publishing",
+          "columnName": "Place of publishing",
+          "query": "printed",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "pp. xii. 314. Privately printed"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      }
+    ],
+    "description": "Mass edit cells in column Place of publishing"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Place of publishing",
+          "columnName": "Place of publishing",
+          "query": "printed",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Selby printed, London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      }
+    ],
+    "description": "Mass edit cells in column Place of publishing"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Place of publishing",
+          "columnName": "Place of publishing",
+          "query": "printed",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Tottenham printed for private circulation"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tottenham"
+      }
+    ],
+    "description": "Mass edit cells in column Place of publishing"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Place of publishing",
+          "expression": "value",
+          "columnName": "Place of publishing",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Parker & Co. London",
+                "l": "Parker & Co. London"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "grel:\"Parker & Co.\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Publisher/printer using expression grel:\"Parker & Co.\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Place of publishing",
+          "expression": "value",
+          "columnName": "Place of publishing",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "T. C. Newby; London",
+                "l": "T. C. Newby; London"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "grel:\"T. C. Newby\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Publisher/printer using expression grel:\"T. C. Newby\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Place of publishing",
+          "expression": "value",
+          "columnName": "Place of publishing",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "pp. 131. Johnstone & Co.",
+                "l": "pp. 131. Johnstone & Co."
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "grel:\"Johnstone & Co.\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Publisher/printer using expression grel:\"Johnstone & Co.\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Place of publishing",
+          "expression": "value",
+          "columnName": "Place of publishing",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "G. Routledge & Sons",
+                "l": "G. Routledge & Sons"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "grel:\"G. Routledge & Sons\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Publisher/printer using expression grel:\"G. Routledge & Sons\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Place of publishing",
+          "expression": "value",
+          "columnName": "Place of publishing",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "pp. vi. 303. A. R. Mowbray & Co.",
+                "l": "pp. vi. 303. A. R. Mowbray & Co."
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "grel:\"A. R. Mowbray & Co.\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Publisher/printer using expression grel:\"A. R. Mowbray & Co.\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Place of publishing",
+          "expression": "value",
+          "columnName": "Place of publishing",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "pp. xvi. 319. Mowbray & Co.",
+                "l": "pp. xvi. 319. Mowbray & Co."
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "grel:\"Mowbray & Co.\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Publisher/printer using expression grel:\"Mowbray & Co.\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Place of publishing",
+          "expression": "value",
+          "columnName": "Place of publishing",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "pp. viii. 249. William Blackwood & Sons",
+                "l": "pp. viii. 249. William Blackwood & Sons"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "grel:\"William Blackwood & Sons\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Publisher/printer using expression grel:\"William Blackwood & Sons\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Place of publishing",
+          "expression": "value",
+          "columnName": "Place of publishing",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Ward & Lock London",
+                "l": "Ward & Lock London"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "grel:\"Ward & Lock\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Publisher/printer using expression grel:\"Ward & Lock\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Place of publishing",
+          "expression": "value",
+          "columnName": "Place of publishing",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Hutchinson & Co. London",
+                "l": "Hutchinson & Co. London"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "grel:\"Hutchinson & Co.\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Publisher/printer using expression grel:\"Hutchinson & Co.\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Place of publishing",
+          "expression": "value",
+          "columnName": "Place of publishing",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "S. Tinsley & Co.",
+                "l": "S. Tinsley & Co."
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "grel:\"S. Tinsley & Co.\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Publisher/printer using expression grel:\"S. Tinsley & Co.\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Place of publishing",
+          "expression": "value",
+          "columnName": "Place of publishing",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "pp. 93. “The Eastern Counties Gazette” Office",
+                "l": "pp. 93. “The Eastern Counties Gazette” Office"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "grel:\"\\u201cThe Eastern Counties Gazette\\u201d Office\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Publisher/printer using expression grel:\"\\u201cThe Eastern Counties Gazette\\u201d Office\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Place of publishing",
+          "expression": "value",
+          "columnName": "Place of publishing",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Digby, Long & Co. London",
+                "l": "Digby, Long & Co. London"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "grel:\"Digby, Long & Co.\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Publisher/printer using expression grel:\"Digby, Long & Co.\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Place of publishing",
+          "expression": "value",
+          "columnName": "Place of publishing",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Sunday School Union, London",
+                "l": "Sunday School Union, London"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "grel:\"Sunday School Union\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Publisher/printer using expression grel:\"Sunday School Union\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Place of publishing",
+          "expression": "value",
+          "columnName": "Place of publishing",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Cassell, Petter & Galpin, London",
+                "l": "Cassell, Petter & Galpin, London"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "grel:\"Cassell, Petter & Galpin\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Publisher/printer using expression grel:\"Cassell, Petter & Galpin\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Place of publishing",
+          "expression": "value",
+          "columnName": "Place of publishing",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "pp. 138. E. T. W. Dennis",
+                "l": "pp. 138. E. T. W. Dennis"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "grel:\"E. T. W. Dennis\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Publisher/printer using expression grel:\"E. T. W. Dennis\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Place of publishing",
+          "expression": "value",
+          "columnName": "Place of publishing",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "pp. 336. T. Lee",
+                "l": "pp. 336. T. Lee"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "grel:\"T. Lee\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Publisher/printer using expression grel:\"T. Lee\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Place of publishing",
+          "expression": "value",
+          "columnName": "Place of publishing",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Bemrose & Sons",
+                "l": "Bemrose & Sons"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "grel:\"Bemrose & Sons\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Publisher/printer using expression grel:\"Bemrose & Sons\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Place of publishing",
+          "expression": "value",
+          "columnName": "Place of publishing",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Cassell & Co. London",
+                "l": "Cassell & Co. London"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "grel:\"Cassell & Co.\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Publisher/printer using expression grel:\"Cassell & Co.\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Place of publishing",
+          "expression": "value",
+          "columnName": "Place of publishing",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Hodder & Stoughton",
+                "l": "Hodder & Stoughton"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "grel:\"Hodder & Stoughton\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Publisher/printer using expression grel:\"Hodder & Stoughton\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Place of publishing",
+          "expression": "value",
+          "columnName": "Place of publishing",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Simpkin & Marshall; London",
+                "l": "Simpkin & Marshall; London"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "grel:\"Simpkin & Marshall\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Publisher/printer using expression grel:\"Simpkin & Marshall\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Place of publishing",
+          "expression": "value",
+          "columnName": "Place of publishing",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Longmans, Green & Co.",
+                "l": "Longmans, Green & Co."
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "grel:\"Longmans, Green & Co.\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Publisher/printer using expression grel:\"Longmans, Green & Co.\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Place of publishing",
+          "expression": "value",
+          "columnName": "Place of publishing",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Longmans Green & Co.; Melbourne Melville, Mullen & Slade",
+                "l": "Longmans Green & Co.; Melbourne Melville, Mullen & Slade"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "grel:\"Longmans Green & Co.\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Publisher/printer using expression grel:\"Longmans Green & Co.\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Place of publishing",
+          "expression": "value",
+          "columnName": "Place of publishing",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Burns & Oates; London",
+                "l": "Burns & Oates; London"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "grel:\"Burns & Oates\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Publisher/printer using expression grel:\"Burns & Oates\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Place of publishing",
+          "expression": "value",
+          "columnName": "Place of publishing",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "Hutchinson & Co.. London",
+                "l": "Hutchinson & Co.. London"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "grel:\"Hutchinson & Co.\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Publisher/printer using expression grel:\"Hutchinson & Co.\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Place of publishing",
+          "expression": "value",
+          "columnName": "Place of publishing",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "George Routledge & Sons London",
+                "l": "George Routledge & Sons London"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "grel:\"George Routledge & Sons\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Publisher/printer using expression grel:\"George Routledge & Sons\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Place of publishing",
+          "expression": "value",
+          "columnName": "Place of publishing",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "London, West, Newman & Co.",
+                "l": "London, West, Newman & Co."
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "grel:\"West, Newman & Co.\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Publisher/printer using expression grel:\"West, Newman & Co.\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Place of publishing",
+          "expression": "value",
+          "columnName": "Place of publishing",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "pp. 38. E. Pryor",
+                "l": "pp. 38. E. Pryor"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "grel:\"E. Pryor\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Publisher/printer using expression grel:\"E. Pryor\""
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Place of publishing",
+          "expression": "value",
+          "columnName": "Place of publishing",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "pp. 733. Puritan Publishing Co.",
+                "l": "pp. 733. Puritan Publishing Co."
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "grel:\"Puritan Publishing Co.\"",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Publisher/printer using expression grel:\"Puritan Publishing Co.\""
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Canto 1. London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "1. London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "London; W. H. Robinson Walsall"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "Manchester; Simpkin, Marshall & Co. London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Manchester"
+      },
+      {
+        "from": [
+          "London, etc."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "Parker & Co. London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "T. C. Newby; London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "pp. 131. Johnstone & Co."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "London; Phillipson & Golder Chester"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "G. Routledge & Sons"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      },
+      {
+        "from": [
+          "London; G. & T. Coward Carlisle"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "London; T. D. Morison Glasgow"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "London; Mawson, Swan & Morgan Newcastle"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "Glasgow; Simpkin, Marshall & Co. London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Glasgow"
+      },
+      {
+        "from": [
+          "London; Fredk. A. Stokes Co. New York"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "pp. vi. 303. A. R. Mowbray & Co."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Oxford & London"
+      },
+      {
+        "from": [
+          "pp. xvi. 319. Mowbray & Co."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Oxford & London"
+      },
+      {
+        "from": [
+          "London; R. Aickin & Co. Belfast"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "Winchester; Simpkin & Co. London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Winchester"
+      },
+      {
+        "from": [
+          "London; Roberts Bros. Boston"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "London; James Woollard Liverpool"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "pp. viii. 249. William Blackwood & Sons"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Edinburgh & London"
+      },
+      {
+        "from": [
+          "London; Thomas Upward Exeter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "London; Virtue & Yorston New York"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "London; Catholic Publication Society: New York"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "Ward & Lock London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "Hutchinson & Co. London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "S. Tinsley & Co."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "pp. 93. “The Eastern Counties Gazette” Office"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ipswich"
+      },
+      {
+        "from": [
+          "Chicago, etc."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Chicago"
+      },
+      {
+        "from": [
+          "Digby, Long & Co. London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "Sunday School Union, London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "Glasgow; W. Briggs Toronto"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Glasgow"
+      },
+      {
+        "from": [
+          "Nos. 1-7. London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "Cassell, Petter & Galpin, London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "22 London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "40 Nos. London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "pp. 138. E. T. W. Dennis"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Scarborough"
+      },
+      {
+        "from": [
+          "pp. 336. T. Lee"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Edmonton"
+      },
+      {
+        "from": [
+          "Bemrose & Sons"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London & Derby"
+      },
+      {
+        "from": [
+          "London; Liddell & Son Bodmin"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "Cassell & Co. London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "London; Robert White Worksop"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "Edinburgh; Longman, Hurst, Rees, Orme, & Brown London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Edinburgh"
+      },
+      {
+        "from": [
+          "Newcastle-upon-Tyne, Simpkin, Marshall & Co. London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Newcastle-upon-Tyne"
+      },
+      {
+        "from": [
+          "Hodder & Stoughton"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": ""
+      },
+      {
+        "from": [
+          "2 vol. London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "Simpkin & Marshall; London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "Longmans, Green & Co."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London & New York"
+      },
+      {
+        "from": [
+          "Longmans Green & Co.; Melbourne Melville, Mullen & Slade"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London & New York"
+      },
+      {
+        "from": [
+          "no. 1, 2. London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "no. 1-6. London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "Burns & Oates; London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "15 no. London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "Hutchinson & Co.. London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "Exeter; Whittaker & Co. London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Exeter"
+      },
+      {
+        "from": [
+          "3 vols. London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "George Routledge & Sons London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "London; Norris & Cokayne Nottingham"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "New York; Trübner & Co. London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New York"
+      },
+      {
+        "from": [
+          "Portland Houghton Mifflin Co. Boston & New York"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Boston & New York"
+      },
+      {
+        "from": [
+          "London, West, Newman & Co."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "pp. 38. E. Pryor"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sheffield"
+      },
+      {
+        "from": [
+          "Dublin; and by J. Johnson: London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dublin"
+      },
+      {
+        "from": [
+          "Hartford ; Boston Mass., stereotyped"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hartford ; Boston Mass."
+      },
+      {
+        "from": [
+          "pp. 733. Puritan Publishing Co."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Boston"
+      },
+      {
+        "from": [
+          "66 no. London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      }
+    ],
+    "description": "Mass edit cells in column Place of publishing"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Tinsley Bros.; Guildford [printed]"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tinsley Bros."
+      },
+      {
+        "from": [
+          "2 vol Chapman & Hall"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Chapman & Hall"
+      },
+      {
+        "from": [
+          "1 400. Gay & Bird"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gay & Bird"
+      }
+    ],
+    "description": "Mass edit cells in column Publisher/printer"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "New York; Trübner & Co. London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New York"
+      },
+      {
+        "from": [
+          "London; F. P. Harper New York"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      }
+    ],
+    "description": "Mass edit cells in column Place of publishing"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Tinsley Bros.; Guildford [printed]"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tinsley Bros."
+      }
+    ],
+    "description": "Mass edit cells in column Publisher/printer"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Publisher/printer using expression value.trim()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Publisher/printer",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Tinsley Bros.; Guildford [printed]"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tinsley Bros."
+      }
+    ],
+    "description": "Mass edit cells in column Publisher/printer"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Imprint",
+    "description": "Remove column Imprint"
+  }
+]

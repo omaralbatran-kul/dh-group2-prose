@@ -68,3 +68,11 @@
 ## 12 Nov - step 8 Language (041)
 
 - Took out the MARC codes: `$aeng$afre$adut` -> `eng, fre, dut`. 19 cells.
+
+## 13 Nov - step 9 split Imprint
+
+- Imprint -> 3 new columns, same names and order as Bert: `Publisher/printer`, `Place of publishing`, `Year of publication`. Imprint removed after.
+- Year: `value.find(/1[4-9]\d\d/)[0]` = first year, plain number.
+- Place: `value.split(":")[0]`, then cut the date `value.replace(/[,;]?[^,;]*1[4-9]\d\d.*$/, "")`, removed brackets, trim,
+  then drop printing places `value.replace(/\s*[,;].*printed,?$/, "")`.
+- Publisher: `value.partition(":")[2]` (keeps text after a 2nd colon), same date cut, brackets out + trim.
