@@ -1,0 +1,99 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Personal author",
+          "columnName": "Personal author",
+          "query": "afterwards",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Personal author",
+    "expression": "grel:value.split(\", \").slice(2).join(\", \")",
+    "onError": "set-to-blank",
+    "newColumnName": "extra",
+    "columnInsertIndex": 5,
+    "description": "Create column extra at index 5 based on column Personal author using expression grel:value.split(\", \").slice(2).join(\", \")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Personal author",
+          "columnName": "Personal author",
+          "query": "afterwards",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "extra",
+    "expression": "grel:value.find(/(Mrs|Miss)\\.?|Jun\\.|Sen\\.|the (Younger|Elder)\\.?|pseud\\..*/).join(\", \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column extra using expression grel:value.find(/(Mrs|Miss)\\.?|Jun\\.|Sen\\.|the (Younger|Elder)\\.?|pseud\\..*/).join(\", \")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Personal author",
+          "columnName": "Personal author",
+          "query": "afterwards",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Personal author",
+    "expression": "grel:value.split(\", \").slice(0, 2).join(\", \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Personal author using expression grel:value.split(\", \").slice(0, 2).join(\", \")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "Personal author",
+          "columnName": "Personal author",
+          "query": "afterwards",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Personal author",
+    "expression": "grel:if(isNonBlank(cells[\"extra\"].value), value + \", \" + cells[\"extra\"].value, value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Personal author using expression grel:if(isNonBlank(cells[\"extra\"].value), value + \", \" + cells[\"extra\"].value, value)"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "extra",
+    "description": "Remove column extra"
+  }
+]

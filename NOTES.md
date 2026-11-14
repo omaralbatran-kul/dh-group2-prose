@@ -76,3 +76,6 @@
 - Place: `value.split(":")[0]`, then cut the date `value.replace(/[,;]?[^,;]*1[4-9]\d\d.*$/, "")`, removed brackets, trim,
   then drop printing places `value.replace(/\s*[,;].*printed,?$/, "")`.
 - Publisher: `value.partition(":")[2]` (keeps text after a 2nd colon), same date cut, brackets out + trim.
+## 14 Nov - step 10 author titles
+
+- Removed titles/jobs/degrees from the Personal author
