@@ -93,3 +93,8 @@
 
 - BL Type was matched on part of a word in the title: story <- "history", opera <- "operations"/"Coopers"/"Popery", tale <- "capitale", play <- "drama"/"displayed".
 - New column `Type in title` (based on Title): `whole word` if the type or its plural is a whole word in the title, else `part of other word`. (4037/9122)
+
+## 17 Nov - step 14 column order
+
+- Reordered the columns (no values changed): IDs + Type/Genre first, then Title, Edition, author columns, imprint columns,
+  other authors, and the near-empty ones (Series, Subjects, Other corporate authors, Country code, Language codes, Corporate author) at the end.

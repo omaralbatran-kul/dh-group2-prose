@@ -1,0 +1,127 @@
+[
+  {
+    "op": "core/column-move-last",
+    "columnName": "Country code",
+    "description": "Move column Country code to the end"
+  },
+  {
+    "op": "core/column-move-last",
+    "columnName": "Language code (008)",
+    "description": "Move column Language code (008) to the end"
+  },
+  {
+    "op": "core/column-move-last",
+    "columnName": "Language code (041)",
+    "description": "Move column Language code (041) to the end"
+  },
+  {
+    "op": "core/column-move-last",
+    "columnName": "Title",
+    "description": "Move column Title to the end"
+  },
+  {
+    "op": "core/column-move-first",
+    "columnName": "Title",
+    "description": "Move column Title to the beginning"
+  },
+  {
+    "op": "core/column-move-right",
+    "columnName": "Title",
+    "description": "Move column Title to the right"
+  },
+  {
+    "op": "core/column-move-first",
+    "columnName": "Type in title",
+    "description": "Move column Type in title to the beginning"
+  },
+  {
+    "op": "core/column-move-right",
+    "columnName": "Type in title",
+    "description": "Move column Type in title to the right"
+  },
+  {
+    "op": "core/column-move-last",
+    "columnName": "Corporate author",
+    "description": "Move column Corporate author to the end"
+  },
+  {
+    "op": "core/column-move-first",
+    "columnName": "Edition",
+    "description": "Move column Edition to the beginning"
+  },
+  {
+    "op": "core/column-move-right",
+    "columnName": "Edition",
+    "description": "Move column Edition to the right"
+  },
+  {
+    "op": "core/column-move-right",
+    "columnName": "Edition",
+    "description": "Move column Edition to the right"
+  },
+  {
+    "op": "core/column-move-right",
+    "columnName": "Edition",
+    "description": "Move column Edition to the right"
+  },
+  {
+    "op": "core/column-move-left",
+    "columnName": "Other personal authors",
+    "description": "Move column Other personal authors to the left"
+  },
+  {
+    "op": "core/column-move-left",
+    "columnName": "Other personal authors",
+    "description": "Move column Other personal authors to the left"
+  },
+  {
+    "op": "core/column-move-first",
+    "columnName": "DOM ID",
+    "description": "Move column DOM ID to the beginning"
+  },
+  {
+    "op": "core/column-move-first",
+    "columnName": "Type",
+    "description": "Move column Type to the beginning"
+  },
+  {
+    "op": "core/column-move-first",
+    "columnName": "Genre",
+    "description": "Move column Genre to the beginning"
+  },
+  {
+    "op": "core/column-move-right",
+    "columnName": "Type",
+    "description": "Move column Type to the right"
+  },
+  {
+    "op": "core/column-move-right",
+    "columnName": "Type",
+    "description": "Move column Type to the right"
+  },
+  {
+    "op": "core/column-move-right",
+    "columnName": "Type",
+    "description": "Move column Type to the right"
+  },
+  {
+    "op": "core/column-move-right",
+    "columnName": "Genre",
+    "description": "Move column Genre to the right"
+  },
+  {
+    "op": "core/column-move-right",
+    "columnName": "Genre",
+    "description": "Move column Genre to the right"
+  },
+  {
+    "op": "core/column-move-right",
+    "columnName": "Genre",
+    "description": "Move column Genre to the right"
+  },
+  {
+    "op": "core/column-move-left",
+    "columnName": "Type",
+    "description": "Move column Type to the left"
+  }
+]
