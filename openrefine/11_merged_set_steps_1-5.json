@@ -1,0 +1,1985 @@
+[
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Personal author",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Cowley, Hannah.",
+          "Cowley, Hannah"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Cowley, Hannah."
+      },
+      {
+        "from": [
+          "Blake, afterwards GOWING, Emilia Aylmer.",
+          "Blake, afterwards Gowing, Emilia Aylmer."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Blake, afterwards Gowing, Emilia Aylmer."
+      },
+      {
+        "from": [
+          "Moncrieff, William Thomas, pseud. [i.e. William Thomas Thomas.]",
+          "Moncrieff, William Thomas pseud. [i.e. William Thomas Thomas.]"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Moncrieff, William Thomas, pseud. [i.e. William Thomas Thomas.]"
+      },
+      {
+        "from": [
+          "Hobday, Edmund Arthur Ponsonby",
+          "Hobday, Edmund Arthur Ponsonby."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hobday, Edmund Arthur Ponsonby"
+      },
+      {
+        "from": [
+          "Fitzgerald, Shafto Justin Adair.",
+          "Fitz-Gerald, Shafto Justin Adair"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fitzgerald, Shafto Justin Adair."
+      },
+      {
+        "from": [
+          "Cooper, James Fenimore",
+          "Cooper, James Fenimore."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Cooper, James Fenimore"
+      },
+      {
+        "from": [
+          "Kidder, Frederic.",
+          "Kidder, Frederic"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kidder, Frederic."
+      },
+      {
+        "from": [
+          "Garrick, David",
+          "Garrick, David."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Garrick, David"
+      },
+      {
+        "from": [
+          "Bottarelli, Giovan Gualberto",
+          "Bottarelli, Giovan Gualberto."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bottarelli, Giovan Gualberto"
+      },
+      {
+        "from": [
+          "Prest, Thomas Peckett",
+          "Prest, Thomas Peckett."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Prest, Thomas Peckett"
+      },
+      {
+        "from": [
+          "Prescott, E. Livingston, pseud. [i.e. Edith Katharine Spicer Jay.]",
+          "Prescott, E. Livingston pseud. [i.e. Edith Katharine Spicer Jay.]"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Prescott, E. Livingston, pseud. [i.e. Edith Katharine Spicer Jay.]"
+      },
+      {
+        "from": [
+          "Fendall, Percy.",
+          "Fendall, Percy"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fendall, Percy."
+      },
+      {
+        "from": [
+          "Ellis, Edward Sylvester",
+          "Ellis, Edward Sylvester."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ellis, Edward Sylvester"
+      },
+      {
+        "from": [
+          "Wycherley, William.",
+          "Wycherley, William"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wycherley, William."
+      },
+      {
+        "from": [
+          "Voltaire",
+          "Voltaire,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Voltaire"
+      },
+      {
+        "from": [
+          "Oxenford, John.",
+          "Oxenford, John"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Oxenford, John."
+      },
+      {
+        "from": [
+          "Howard, Blanche Willis",
+          "Howard, Blanche Willis."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Howard, Blanche Willis"
+      },
+      {
+        "from": [
+          "Mansford, Charles Jodrell",
+          "Mansford, Charles Jodrell."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mansford, Charles Jodrell"
+      },
+      {
+        "from": [
+          "Thomas, afterwards CUDLIP, Annie Hall.",
+          "Thomas, afterwards Cudlip, Annie Hall."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Thomas, afterwards Cudlip, Annie Hall."
+      },
+      {
+        "from": [
+          "Hazlitt, William Carew",
+          "Hazlitt, William Carew."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hazlitt, William Carew"
+      },
+      {
+        "from": [
+          "Fennell, Charlotte",
+          "Fennell, Charlotte."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fennell, Charlotte"
+      },
+      {
+        "from": [
+          "Burges, afterwards LAMB,  James Bland",
+          "Burges, afterwards Lamb, James Bland"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Burges, afterwards Lamb,  James Bland"
+      },
+      {
+        "from": [
+          "Pindar, Peter",
+          "Pindar, Peter."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pindar, Peter"
+      },
+      {
+        "from": [
+          "Otway, Thomas.",
+          "Otway, Thomas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Otway, Thomas."
+      },
+      {
+        "from": [
+          "Watt, Francis",
+          "Watt, Francis."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Watt, Francis"
+      },
+      {
+        "from": [
+          "Sotheby, William.",
+          "Sotheby, William"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Sotheby, William."
+      },
+      {
+        "from": [
+          "Terrell, Thomas.",
+          "Terrell, Thomas"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Terrell, Thomas."
+      },
+      {
+        "from": [
+          "Watson, Aaron",
+          "Watson, Aaron."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Watson, Aaron"
+      },
+      {
+        "from": [
+          "Thurtle, afterwards JAMIESON, Frances.",
+          "Thurtle, afterwards Jamieson, Frances."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Thurtle, afterwards Jamieson, Frances."
+      },
+      {
+        "from": [
+          "Tuttle, Charles Richmond.",
+          "Tuttle, Charles Richmond"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tuttle, Charles Richmond."
+      },
+      {
+        "from": [
+          "Caryl, John",
+          "Caryl, John."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Caryl, John"
+      },
+      {
+        "from": [
+          "Magnay, William",
+          "Magnay, William."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Magnay, William"
+      },
+      {
+        "from": [
+          "Robinson, Charles John.",
+          "Robinson, John Charles"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Robinson, Charles John."
+      },
+      {
+        "from": [
+          "Maturin, Charles Robert.",
+          "Maturin, Charles Robert"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Maturin, Charles Robert."
+      },
+      {
+        "from": [
+          "Davenport, Robert",
+          "Davenport, Robert."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Davenport, Robert"
+      },
+      {
+        "from": [
+          "Bickerstaffe, Isaac.",
+          "Bickerstaffe, Isaac"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bickerstaffe, Isaac."
+      },
+      {
+        "from": [
+          "Aïdé, Hamilton.",
+          "Aïdé, Hamilton"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Aïdé, Hamilton."
+      },
+      {
+        "from": [
+          "Settle, Elkanah.",
+          "Settle, Elkanah"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Settle, Elkanah."
+      },
+      {
+        "from": [
+          "Jameson, Robert Francis",
+          "Jameson, Robert Francis."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jameson, Robert Francis"
+      },
+      {
+        "from": [
+          "Watson, afterwards Taylor, George",
+          "Watson, afterwards Taylor, George."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Watson, afterwards Taylor, George"
+      },
+      {
+        "from": [
+          "Baring-Gould, S. (Sabine)",
+          "Baring-gould, S. (Sabine)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Baring-Gould, S. (Sabine)"
+      },
+      {
+        "from": [
+          "Ridpath, John Clark",
+          "Ridpath, John Clark."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ridpath, John Clark"
+      },
+      {
+        "from": [
+          "Séguin, afterwards STRAHAN, Lisbeth Gooch.",
+          "Séguin, afterwards Strahan, Lisbeth Gooch."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Séguin, afterwards Strahan, Lisbeth Gooch."
+      },
+      {
+        "from": [
+          "Miller, Joaquin",
+          "Miller, Joaquin."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Miller, Joaquin"
+      },
+      {
+        "from": [
+          "Howitt, William",
+          "Howitt, William."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Howitt, William"
+      },
+      {
+        "from": [
+          "Jenkinson, Arthur",
+          "Jenkinson, Arthur."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jenkinson, Arthur"
+      },
+      {
+        "from": [
+          "Roosevelt, Blanche, pseud. [i.e. Blanche Roosevelt Tucker Macchetta.]",
+          "Roosevelt, Blanche pseud. [i.e. Blanche Roosevelt Tucker Macchetta.]"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Roosevelt, Blanche, pseud. [i.e. Blanche Roosevelt Tucker Macchetta.]"
+      },
+      {
+        "from": [
+          "Byron, George Gordon Byron",
+          "Byron, George Gordon"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Byron, George Gordon"
+      },
+      {
+        "from": [
+          "Bunn, Alfred.",
+          "Bunn, Alfred"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bunn, Alfred."
+      },
+      {
+        "from": [
+          "Clifford, W. K., Mrs.",
+          "Clifford, W. K., Mrs.,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Clifford, W. K."
+      },
+      {
+        "from": [
+          "Kemble, afterwards BUTLER, Frances Anne.",
+          "Kemble, afterwards Butler, Frances Anne."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kemble, afterwards Butler, Frances Anne."
+      },
+      {
+        "from": [
+          "Fawcett, Edgar.",
+          "Fawcett, Edgar"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fawcett, Edgar."
+      },
+      {
+        "from": [
+          "Baigent, Francis Joseph",
+          "Baigent, Francis Joseph."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Baigent, Francis Joseph"
+      },
+      {
+        "from": [
+          "Bickley, Augustus Charles",
+          "Bickley, Augustus Charles."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bickley, Augustus Charles"
+      },
+      {
+        "from": [
+          "Clayton, afterwards NEEDHAM, Ellen Creathorne.",
+          "Clayton, afterwards Needham, Ellen Creathorne."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Clayton, afterwards Needham, Ellen Creathorne."
+      },
+      {
+        "from": [
+          "Upward, Allen",
+          "Upward, Allen."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Upward, Allen"
+      },
+      {
+        "from": [
+          "Frederic, Harold.",
+          "Frederic, Harold"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Frederic, Harold."
+      },
+      {
+        "from": [
+          "Church, Alfred John.",
+          "Church, Alfred John"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Church, Alfred John."
+      },
+      {
+        "from": [
+          "Tomlins, Frederick Guest",
+          "Tomlins, Frederick Guest."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tomlins, Frederick Guest"
+      },
+      {
+        "from": [
+          "Wills, Charles James.",
+          "Wills, Charles James"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wills, Charles James."
+      },
+      {
+        "from": [
+          "Hunter, Peter Hay",
+          "Hunter, Peter Hay."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hunter, Peter Hay"
+      },
+      {
+        "from": [
+          "Pindar, Peter, pseud. [i.e. John Wolcot.]",
+          "Pindar, Peter pseud. [i.e. John Wolcot.]"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pindar, Peter, pseud. [i.e. John Wolcot.]"
+      },
+      {
+        "from": [
+          "Swanwick, Catherine.",
+          "Swanwick, Catherine"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Swanwick, Catherine."
+      },
+      {
+        "from": [
+          "Foote, Samuel.",
+          "Foote, Samuel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Foote, Samuel."
+      },
+      {
+        "from": [
+          "Jarves, James Jackson",
+          "Jarves, James Jackson."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Jarves, James Jackson"
+      }
+    ],
+    "description": "Mass edit cells in column Personal author"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Edinburgh & London",
+          "London, Edinburgh",
+          "Edinburgh ; London",
+          "Edinburgh, London",
+          "London & Edinburgh",
+          "London; Edinburgh",
+          "London ; Edinburgh",
+          "Edinburgh , London",
+          "London Edinburgh"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London, Edinburgh"
+      },
+      {
+        "from": [
+          "London & New York",
+          "London, New York",
+          "London ; New York",
+          "New York ; London",
+          "New York, London",
+          "New York & London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London, New York"
+      },
+      {
+        "from": [
+          "Oxford & London",
+          "Oxford ; London",
+          "London & Oxford",
+          "London, Oxford",
+          "London; Oxford"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London, Oxford"
+      },
+      {
+        "from": [
+          "Cambridge & London",
+          "Cambridge, London",
+          "London, Cambridge"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London, Cambridge"
+      },
+      {
+        "from": [
+          "Cambridge Mass.",
+          "Cambridge [Mass.]",
+          "Cambridge, Mass."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Cambridge Mass."
+      },
+      {
+        "from": [
+          "London",
+          "London,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London"
+      },
+      {
+        "from": [
+          "Boston Mass.",
+          "Boston, Mass.",
+          "Boston Mass"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Boston Mass."
+      },
+      {
+        "from": [
+          "London & Sydney",
+          "London ; Sydney",
+          "London, Sydney"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London, Sydney"
+      },
+      {
+        "from": [
+          "Boston ; New York",
+          "New York ; Boston",
+          "Boston & New York"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Boston, New York"
+      },
+      {
+        "from": [
+          "Norwich Conn.",
+          "Norwich, Conn."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Norwich Conn."
+      },
+      {
+        "from": [
+          "London, Melbourne",
+          "Melbourne, London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London, Melbourne"
+      },
+      {
+        "from": [
+          "Omaha, Neb.",
+          "Omaha, Neb"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Omaha, Neb."
+      },
+      {
+        "from": [
+          "Edinburgh and London",
+          "London and Edinburgh"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London, Edinburgh"
+      },
+      {
+        "from": [
+          "London ; Derby",
+          "London & Derby"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London, Derby"
+      },
+      {
+        "from": [
+          "Worcester Mass.",
+          "Worcester, Mass."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Worcester Mass."
+      },
+      {
+        "from": [
+          "London, Dublin",
+          "London ; Dublin"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London, Dublin"
+      },
+      {
+        "from": [
+          "New York ; Chicago",
+          "New York; Chicago"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New York, Chicago"
+      },
+      {
+        "from": [
+          "Bury St. Edmund's",
+          "Bury St. Edmunds"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bury St. Edmunds"
+      },
+      {
+        "from": [
+          "Kraków",
+          "Kraków, -"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kraków"
+      },
+      {
+        "from": [
+          "London, Belfast",
+          "London & Belfast"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London, Belfast"
+      },
+      {
+        "from": [
+          "Burlington Vt.",
+          "Burlington, Vt."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Burlington Vt."
+      },
+      {
+        "from": [
+          "London, Manchester",
+          "Manchester & London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London, Manchester"
+      },
+      {
+        "from": [
+          "Portland Me.",
+          "Portland, Me."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Portland Me."
+      },
+      {
+        "from": [
+          "Boston U.S.",
+          "Boston, U.S."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Boston U.S."
+      },
+      {
+        "from": [
+          "Springfield, Mass.",
+          "Springfield Mass."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Springfield, Mass."
+      },
+      {
+        "from": [
+          "Hartford Conn.",
+          "Hartford, Conn."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hartford Conn."
+      },
+      {
+        "from": [
+          "London and New York",
+          "New York and London"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London, New York"
+      },
+      {
+        "from": [
+          "Providence, R.I.",
+          "Providence R.I."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Providence, R.I."
+      },
+      {
+        "from": [
+          "London , Paris",
+          "London, Paris"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London, Paris"
+      },
+      {
+        "from": [
+          "Torino",
+          "Torino, -"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Torino"
+      },
+      {
+        "from": [
+          "Petersburg Va.",
+          "Petersburg, Va."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Petersburg Va."
+      },
+      {
+        "from": [
+          "Portland Maine",
+          "Portland, Maine"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Portland Maine"
+      }
+    ],
+    "description": "Mass edit cells in column Place of publishing"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Place of publishing",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Caernarvon",
+          "Carnarvon"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Caernarvon"
+      },
+      {
+        "from": [
+          "Madison, Wis.",
+          "Madison, Wisc."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Madison, Wis."
+      },
+      {
+        "from": [
+          "Buenos Aires",
+          "Buenos Ayres"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Buenos Aires"
+      },
+      {
+        "from": [
+          "Richmond, Va.",
+          "Richmond, VaA."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Richmond, Va."
+      },
+      {
+        "from": [
+          "New-Haven Conn.",
+          "New Haven Conn."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Haven Conn."
+      },
+      {
+        "from": [
+          "London, Sydney",
+          "London, Sidney"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "London, Sydney"
+      }
+    ],
+    "description": "Mass edit cells in column Place of publishing"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Year published",
+          "expression": "value",
+          "columnName": "Year published",
+          "invert": true,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Year of publication",
+    "expression": "grel:row.cells[\"Year published\"].value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Year of publication using expression grel:row.cells[\"Year published\"].value"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Year published",
+    "description": "Remove column Year published"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Personal author",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata-reconciliation.wmcloud.org/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q5",
+        "name": "human"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [],
+      "limit": 3
+    },
+    "description": "Reconcile cells in column Personal author to type Q5"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Personal author",
+    "similarValue": "Brown, Campbell Rae.",
+    "judgment": "matched",
+    "match": {
+      "id": "Q139500332",
+      "name": "Campbell Rae Brown",
+      "types": [
+        "Q5"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Campbell Rae Brown (Q139500332) for cells containing \"Brown, Campbell Rae.\" in column Personal author"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Personal author: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Personal author",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "Personal author: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Personal author",
+          "from": 24,
+          "to": 101,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": false,
+          "selectError": true
+        },
+        {
+          "type": "text",
+          "name": "Title",
+          "columnName": "Title",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        },
+        {
+          "type": "list",
+          "name": "Personal author date",
+          "expression": "value",
+          "columnName": "Personal author date",
+          "invert": true,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Personal author",
+    "similarValue": "Burnand, F. C. (Francis Cowley)",
+    "judgment": "matched",
+    "match": {
+      "id": "Q5217819",
+      "name": "F. C. Burnand",
+      "types": [
+        "Q5"
+      ],
+      "score": 92
+    },
+    "shareNewTopics": false,
+    "description": "Match item F. C. Burnand (Q5217819) for cells containing \"Burnand, F. C. (Francis Cowley)\" in column Personal author"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Personal author: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Personal author",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "Personal author: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Personal author",
+          "from": 24,
+          "to": 101,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": false,
+          "selectError": true
+        },
+        {
+          "type": "text",
+          "name": "Title",
+          "columnName": "Title",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        },
+        {
+          "type": "list",
+          "name": "Personal author date",
+          "expression": "value",
+          "columnName": "Personal author date",
+          "invert": true,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Personal author",
+    "similarValue": "Dibdin, Charles",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1064116",
+      "name": "Charles Dibdin",
+      "types": [
+        "Q5"
+      ],
+      "score": 100
+    },
+    "shareNewTopics": false,
+    "description": "Match item Charles Dibdin (Q1064116) for cells containing \"Dibdin, Charles\" in column Personal author"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Personal author: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Personal author",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "matched",
+                "l": "matched"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "text",
+          "name": "Title",
+          "columnName": "Title",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Personal author",
+    "expression": "if(cell.recon.match!=null,\"https://www.wikidata.org/wiki/{{id}}\".replace(\"{{id}}\",escape(cell.recon.match.id,\"url\")),null)",
+    "onError": "set-to-blank",
+    "newColumnName": "Author wikidata url",
+    "columnInsertIndex": 6,
+    "description": "Create column Author wikidata url at index 6 based on column Personal author using expression if(cell.recon.match!=null,\"https://www.wikidata.org/wiki/{{id}}\".replace(\"{{id}}\",escape(cell.recon.match.id,\"url\")),null)"
+  },
+  {
+    "op": "core/recon",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Personal author: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Personal author",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "Personal author: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Personal author",
+          "from": 24,
+          "to": 101,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": false,
+          "selectError": true
+        },
+        {
+          "type": "text",
+          "name": "Title",
+          "columnName": "Title",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        },
+        {
+          "type": "list",
+          "name": "Personal author date",
+          "expression": "value",
+          "columnName": "Personal author date",
+          "invert": true,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Personal author",
+    "config": {
+      "mode": "standard-service",
+      "service": "https://wikidata-reconciliation.wmcloud.org/en/api",
+      "identifierSpace": "http://www.wikidata.org/entity/",
+      "schemaSpace": "http://www.wikidata.org/prop/direct/",
+      "type": {
+        "id": "Q5",
+        "name": "human"
+      },
+      "autoMatch": true,
+      "batchSize": 10,
+      "columnDetails": [
+        {
+          "column": "Personal author date",
+          "propertyName": "date of birth",
+          "propertyID": "P569"
+        }
+      ],
+      "limit": 3
+    },
+    "description": "Reconcile cells in column Personal author to type Q5"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Personal author: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Personal author",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "Personal author: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Personal author",
+          "from": 24,
+          "to": 101,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": false,
+          "selectError": true
+        },
+        {
+          "type": "text",
+          "name": "Title",
+          "columnName": "Title",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        },
+        {
+          "type": "list",
+          "name": "Personal author date",
+          "expression": "value",
+          "columnName": "Personal author date",
+          "invert": true,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Personal author",
+    "similarValue": "Scott-gatty, Alfred",
+    "judgment": "matched",
+    "match": {
+      "id": "Q2645894",
+      "name": "Alfred Scott-Gatty",
+      "types": [
+        "Q5"
+      ],
+      "score": 71.42857142857143
+    },
+    "shareNewTopics": false,
+    "description": "Match item Alfred Scott-Gatty (Q2645894) for cells containing \"Scott-gatty, Alfred\" in column Personal author"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Personal author: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Personal author",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "Personal author: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Personal author",
+          "from": 24,
+          "to": 101,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": false,
+          "selectError": true
+        },
+        {
+          "type": "text",
+          "name": "Title",
+          "columnName": "Title",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        },
+        {
+          "type": "list",
+          "name": "Personal author date",
+          "expression": "value",
+          "columnName": "Personal author date",
+          "invert": true,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Personal author",
+    "similarValue": "Lewes, George Henry",
+    "judgment": "matched",
+    "match": {
+      "id": "Q1275943",
+      "name": "George Henry Lewes",
+      "types": [
+        "Q5"
+      ],
+      "score": 71.42857142857143
+    },
+    "shareNewTopics": false,
+    "description": "Match item George Henry Lewes (Q1275943) for cells containing \"Lewes, George Henry\" in column Personal author"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Personal author: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Personal author",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "Personal author: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Personal author",
+          "from": 24,
+          "to": 101,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": false,
+          "selectError": true
+        },
+        {
+          "type": "text",
+          "name": "Title",
+          "columnName": "Title",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        },
+        {
+          "type": "list",
+          "name": "Personal author date",
+          "expression": "value",
+          "columnName": "Personal author date",
+          "invert": true,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Personal author",
+    "similarValue": "Jarnac, Philippe-Ferdinand-Auguste de Rohan-Chabot, comte de",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3380999",
+      "name": "Philippe de Rohan-Chabot",
+      "types": [
+        "Q5"
+      ],
+      "score": 65.71428571428572
+    },
+    "shareNewTopics": false,
+    "description": "Match item Philippe de Rohan-Chabot (Q3380999) for cells containing \"Jarnac, Philippe-Ferdinand-Auguste de Rohan-Chabot, comte de\" in column Personal author"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Personal author: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Personal author",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "Personal author: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Personal author",
+          "from": 24,
+          "to": 101,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": false,
+          "selectError": true
+        },
+        {
+          "type": "text",
+          "name": "Title",
+          "columnName": "Title",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        },
+        {
+          "type": "list",
+          "name": "Personal author date",
+          "expression": "value",
+          "columnName": "Personal author date",
+          "invert": true,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Personal author",
+    "similarValue": "Shakespeare, William",
+    "judgment": "matched",
+    "match": {
+      "id": "Q692",
+      "name": "William Shakespeare",
+      "types": [
+        "Q5"
+      ],
+      "score": 71.42857142857143
+    },
+    "shareNewTopics": false,
+    "description": "Match item William Shakespeare (Q692) for cells containing \"Shakespeare, William\" in column Personal author"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Personal author: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Personal author",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "Personal author: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Personal author",
+          "from": 24,
+          "to": 101,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": false,
+          "selectError": true
+        },
+        {
+          "type": "text",
+          "name": "Title",
+          "columnName": "Title",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        },
+        {
+          "type": "list",
+          "name": "Personal author date",
+          "expression": "value",
+          "columnName": "Personal author date",
+          "invert": true,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Personal author",
+    "similarValue": "Morton, Thomas",
+    "judgment": "matched",
+    "match": {
+      "id": "Q7792577",
+      "name": "Thomas Morton",
+      "types": [
+        "Q5"
+      ],
+      "score": 71.42857142857143
+    },
+    "shareNewTopics": false,
+    "description": "Match item Thomas Morton (Q7792577) for cells containing \"Morton, Thomas\" in column Personal author"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Personal author: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Personal author",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "Personal author: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Personal author",
+          "from": 24,
+          "to": 101,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": false,
+          "selectError": true
+        },
+        {
+          "type": "text",
+          "name": "Title",
+          "columnName": "Title",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        },
+        {
+          "type": "list",
+          "name": "Personal author date",
+          "expression": "value",
+          "columnName": "Personal author date",
+          "invert": true,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Personal author",
+    "similarValue": "Ross, Adrian",
+    "judgment": "matched",
+    "match": {
+      "id": "Q3605637",
+      "name": "Adrian Ross",
+      "types": [
+        "Q5"
+      ],
+      "score": 71.42857142857143
+    },
+    "shareNewTopics": false,
+    "description": "Match item Adrian Ross (Q3605637) for cells containing \"Ross, Adrian\" in column Personal author"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Personal author: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Personal author",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "Personal author: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Personal author",
+          "from": 24,
+          "to": 101,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": false,
+          "selectError": true
+        },
+        {
+          "type": "text",
+          "name": "Title",
+          "columnName": "Title",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        },
+        {
+          "type": "list",
+          "name": "Personal author date",
+          "expression": "value",
+          "columnName": "Personal author date",
+          "invert": true,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Personal author",
+    "similarValue": "Garrick, David",
+    "judgment": "matched",
+    "match": {
+      "id": "Q222390",
+      "name": "David Garrick",
+      "types": [
+        "Q5"
+      ],
+      "score": 71.42857142857143
+    },
+    "shareNewTopics": false,
+    "description": "Match item David Garrick (Q222390) for cells containing \"Garrick, David\" in column Personal author"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Personal author: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Personal author",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "Personal author: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Personal author",
+          "from": 24,
+          "to": 101,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": false,
+          "selectError": true
+        },
+        {
+          "type": "text",
+          "name": "Title",
+          "columnName": "Title",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        },
+        {
+          "type": "list",
+          "name": "Personal author date",
+          "expression": "value",
+          "columnName": "Personal author date",
+          "invert": true,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Personal author",
+    "similarValue": "Canning, Stratford",
+    "judgment": "matched",
+    "match": {
+      "id": "Q943984",
+      "name": "Stratford Canning, 1st Viscount Stratford de Redcliffe",
+      "types": [
+        "Q5"
+      ],
+      "score": 71.42857142857143
+    },
+    "shareNewTopics": false,
+    "description": "Match item Stratford Canning, 1st Viscount Stratford de Redcliffe (Q943984) for cells containing \"Canning, Stratford\" in column Personal author"
+  },
+  {
+    "op": "core/recon-judge-similar-cells",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Personal author: judgment",
+          "expression": "forNonBlank(cell.recon.judgment, v, v, if(isNonBlank(value), \"(unreconciled)\", \"(blank)\"))",
+          "columnName": "Personal author",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "none",
+                "l": "none"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "range",
+          "name": "Personal author: best candidate's score",
+          "expression": "cell.recon.best.score",
+          "columnName": "Personal author",
+          "from": 24,
+          "to": 101,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": false,
+          "selectError": true
+        },
+        {
+          "type": "text",
+          "name": "Title",
+          "columnName": "Title",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        },
+        {
+          "type": "list",
+          "name": "Personal author date",
+          "expression": "value",
+          "columnName": "Personal author date",
+          "invert": true,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Personal author",
+    "similarValue": "Brewer, Anthony",
+    "judgment": "matched",
+    "match": {
+      "id": "Q113807706",
+      "name": "Anthony Brewer",
+      "types": [
+        "Q5"
+      ],
+      "score": 71.42857142857143
+    },
+    "shareNewTopics": false,
+    "description": "Match item Anthony Brewer (Q113807706) for cells containing \"Brewer, Anthony\" in column Personal author"
+  }
+]
