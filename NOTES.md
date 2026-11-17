@@ -79,3 +79,12 @@
 ## 14 Nov - step 10 author titles
 
 - Removed titles/jobs/degrees from the Personal author
+
+## 17 Nov - step 11 merged set
+
+- Bert merged Drama + Music + my Prose step 10 and did 5 steps on it (author/place mass edits, year fix, Wikidata reconciliation of Personal author to Q5 -> `Author wikidata url`).
+- Copied his `Merged _set.csv` + JSON here. 13159 rows (Prose 10532, Drama 1647, Music 980), no duplicate IDs.
+
+## 17 Nov - step 12 drop File column
+
+- Removed `File` (added by OpenRefine on import). Genre already says where each row comes from. 20 columns left.
