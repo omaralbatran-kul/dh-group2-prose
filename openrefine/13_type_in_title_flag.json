@@ -1,0 +1,53 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Title",
+    "expression": "grel:if(value.toLowercase().contains(cells[\"Type\"].value), \"yes\", \"no\")",
+    "onError": "set-to-blank",
+    "newColumnName": "Type in title",
+    "columnInsertIndex": 9,
+    "description": "Create column Type in title at index 9 based on column Title using expression grel:if(value.toLowercase().contains(cells[\"Type\"].value), \"yes\", \"no\")"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Type in title",
+    "description": "Remove column Type in title"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Type in title",
+          "expression": "value",
+          "columnName": "Type in title",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "yes",
+                "l": "yes"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Title",
+    "expression": "grel:with(cells[\"Type\"].value, ty, if(isNull(value.toLowercase().match(\"(?s).*\\\\b(\" + ty + \"|\" + ty.replace(/y$/, \"\") + \")(s|es|y|ies)?\\\\b.*\")), \"part of other word\", \"whole word\"))",
+    "onError": "set-to-blank",
+    "newColumnName": "Type in title",
+    "columnInsertIndex": 9,
+    "description": "Create column Type in title at index 9 based on column Title using expression grel:with(cells[\"Type\"].value, ty, if(isNull(value.toLowercase().match(\"(?s).*\\\\b(\" + ty + \"|\" + ty.replace(/y$/, \"\") + \")(s|es|y|ies)?\\\\b.*\")), \"part of other word\", \"whole word\"))"
+  }
+]

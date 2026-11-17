@@ -88,3 +88,8 @@
 ## 17 Nov - step 12 drop File column
 
 - Removed `File` (added by OpenRefine on import). Genre already says where each row comes from. 20 columns left.
+
+## 17 Nov - step 13 Type in title flag
+
+- BL Type was matched on part of a word in the title: story <- "history", opera <- "operations"/"Coopers"/"Popery", tale <- "capitale", play <- "drama"/"displayed".
+- New column `Type in title` (based on Title): `whole word` if the type or its plural is a whole word in the title, else `part of other word`. (4037/9122)
